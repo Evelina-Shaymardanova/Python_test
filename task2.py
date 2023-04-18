@@ -19,13 +19,13 @@ m_dirw["names"] = "Evelina"
 my_dic["name"] = "Dinar"
 my_dic["Age"] = "33"
 my_dic["Age"] = "55"
-my_dic.update(name = "DINAR")
+my_dic.update(name = "DINAR")    # Добавили новы ключ с элементов в словарь
 my_dic.update(m_dirw)
 
-print("Age" in my_dic)
-print(my_dic.items())
-print(my_dic.keys())
-print(my_dic.values())
-print(my_dic["Age"])
-print(len(my_dic))
-print(my_dic)
+print("Age" in my_dic)   # Узнаем есть ли такой ключь в словаре
+print(my_dic.items())    # Выводит все ключи вместе с элементами
+print(my_dic.keys())     # Выводит все ключи без элементов
+print(my_dic.values())   # Выводим значение всех элементов без ключей
+print(my_dic["Age"])     # Выводим значение(элемент) данного ключа
+print(len(my_dic))       # Посчитали количество ключей в словаре
+print(my_dic)            # Вывели полностью словарь вместе с ключами и элементами
