@@ -10,16 +10,16 @@ m = int(input("Введите длину второго набора чисел:
 s1 = set()
 s2 = set()
 
-for i in range(1, n + 1):
+for i in range(n):
     n = int(input("Введите число для набора чисел первого набора: "))
     s1.add(n)
 print(s1)
 
-for j in range(1, m + 1):
+for j in range(m):
     m = int(input("Введите число для набора чисел второго набора: "))
     s2.add(m)
 print(s2)
 
 s1.update(s2)
-l = list(s1)
-print(*l)
+# l = list(s1)
+print(*sorted(s1 & s2))
